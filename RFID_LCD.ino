@@ -1,5 +1,4 @@
 
-
 /*
  * 
  * Projects sourced gotten from included Arduino examples and combined into
@@ -75,13 +74,13 @@ void loop()
   Serial.print("Message : ");
   lcd.print("Message : ");
   content.toUpperCase();
- // if (content.substring(1) == "BD 31 15 2B") //change here the UID of the card/cards that you want to give access
-  if (content.substring(1) == "10 76 0B 19")
+ 
+  if (content.substring(1) == "B3 9E 74 03"  || content.substring(1) == "AA D4 80 82")
   {
     lcd.setCursor(0,1);
-    Serial.println("Authorized access");
+    Serial.println("YOUR NAME");
     Serial.println();
-    lcd.print("Auth access     ");
+    lcd.print("YOUR NAME     ");
     lcd.println();
     delay(3000);
   }
@@ -93,5 +92,6 @@ void loop()
     delay(3000);
   }
 } 
+
 
 
