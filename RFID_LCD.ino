@@ -57,7 +57,7 @@ void loop()
   }
   //Show UID on serial monitor
   lcd.setCursor(0,0);
-  Serial.print("UID tag :");
+  Serial.print("UID NUMBER :");
   lcd.print("UID:");
   String content= "";
   byte letter;
